@@ -25,7 +25,7 @@ fn main() {
     let first_case = Solution::length_of_longest_substring(String::from("abcabcbb"));
     println!("First case is {}", first_case);
     let second_case = Solution::length_of_longest_substring(String::from("bbbbb"));
-    println!("First case is {}", second_case);
+    println!("Second case is {}", second_case);
     let third_case = Solution::length_of_longest_substring(String::from("pwwkew"));
-    println!("First case is {}", third_case)
+    println!("Third case is {}", third_case)
 }
