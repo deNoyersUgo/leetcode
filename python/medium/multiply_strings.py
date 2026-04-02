@@ -1,0 +1,43 @@
+class Solution:
+    def multiply(self, num1: str, num2: str) -> str:
+        if num1 == "0" or num2 == "0":
+            return "0"
+            
+        len1, len2 = len(num1), len(num2)
+        
+        # Initialize result arrays with zeros
+        # MAxium possible length of product is len1 + len2
+        result = [0] * (len1 + len2)
+        
+        # Multiply each digit of num1 with each digit of num 
+        # Starting from the rightmost digits (least significant)
+        
+        for i in range(len1 - 1, -1, -1):
+            digit1 = int(num1[i])
+          
+            for j in range(len2 - 1, -1, -1):
+                digit2 = int(num2[j])
+              
+                # Multiply current digits and add to corresponding position
+                # Position i + j + 1 corresponds to the current digit position
+                result[i + j + 1] += digit1 * digit2
+      
+        # Handle carries from right to left
+        for i in range(len1 + len2 - 1, 0, -1):
+            # Add carry to the previous position
+            result[i - 1] += result[i] // 10
+            # Keep only the single digit at current position
+            result[i] %= 10
+      
+        # Find the starting index (skip leading zero if present)
+        start_index = 0 if result[0] != 0 else 1
+      
+        # Convert result array to string and return
+        return "".join(str(digit) for digit in result[start_index:])
+            
+
+        
+test1 = Solution().multiply("2", "3")
+print(f"Output of test1: {test1}\n")
+test2 = Solution().multiply("123", "456")
+print(f"Output of test2: {test2}\n")
