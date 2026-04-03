@@ -1,3 +1,5 @@
+from typing import Optional
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, val=0, next=None):
@@ -45,11 +47,12 @@ def print_linked_list(head: Optional[ListNode]) -> list:
         result.append(head.val)
         head = head.next
     return result
-    
-    
-test1 = Solution().removeNthFromEnd(build_linked_list([1,2,3,4,5]), 2)
+
+sol = Solution()    
+
+test1 = sol.removeNthFromEnd(build_linked_list([1,2,3,4,5]), 2)
 print(f"Output of test1: {print_linked_list(test1)}\n")
-test2 = Solution().removeNthFromEnd(build_linked_list([1]), 1)
+test2 = sol.removeNthFromEnd(build_linked_list([1]), 1)
 print(f"Output of test2: {print_linked_list(test2)}\n")
-test3 = Solution().removeNthFromEnd(build_linked_list([1,2]), 1)
+test3 = sol.removeNthFromEnd(build_linked_list([1,2]), 1)
 print(f"Output of test3: {print_linked_list(test3)}\n")

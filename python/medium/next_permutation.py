@@ -26,10 +26,11 @@ class Solution:
             left += 1
             right -= 1
         
+sol = Solution()
         
-test1 = Solution().nextPermutation([1,2,3])
+test1 = sol.nextPermutation([1,2,3])
 print(f"Output of test1: {test1}\n")
-test2 = Solution().nextPermutation([3,2,1])
+test2 = sol.nextPermutation([3,2,1])
 print(f"Output of test2: {test2}\n")
-test3 = Solution().nextPermutation([1,1,5])
+test3 = sol.nextPermutation([1,1,5])
 print(f"Output of test3: {test3}\n")

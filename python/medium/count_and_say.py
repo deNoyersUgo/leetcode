@@ -18,8 +18,10 @@ class Solution:
             res = curr_str
             
         return res
+   
+sol = Solution()   
         
-test1 = Solution().countAndSay(1)
+test1 = sol.countAndSay(1)
 print(f"Output of test1: {test1}\n")
-test2 = Solution().countAndSay(4)
+test2 = sol.countAndSay(4)
 print(f"Output of test2: {test2}\n")

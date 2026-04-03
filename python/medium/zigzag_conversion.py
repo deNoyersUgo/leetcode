@@ -29,10 +29,12 @@ class Solution:
 
         # We execute a single C-level string join operation to generate the final output.
         return "".join(result)
-      
-test1 = Solution().convert("PAYPALISHIRING", 3)
+  
+sol = Solution()
+
+test1 = sol.convert("PAYPALISHIRING", 3)
 print(f"Output of test1: {test1}\n")
-test2 = Solution().convert("PAYPALISHIRING", 4)
+test2 = sol.convert("PAYPALISHIRING", 4)
 print(f"Output of test2: {test2}\n")
-test3 = Solution().convert("A", 1)
+test3 = sol.convert("A", 1)
 print(f"Output of test3: {test3}\n")

@@ -17,14 +17,15 @@ class Solution:
                 return 2**31 - 1
         return sign * num
                 
-                
-test1 = Solution().myAtoi("42")
+sol = Solution()
+
+test1 = sol.myAtoi("42")
 print(f"Output of test1: {test1}\n")
-test2 = Solution().myAtoi("   -042")
+test2 = sol.myAtoi("   -042")
 print(f"Output of test2: {test2}\n")
-test3 = Solution().myAtoi("1337c0d3")
+test3 = sol.myAtoi("1337c0d3")
 print(f"Output of test3: {test3}\n")
-test4 = Solution().myAtoi("0-1")
+test4 = sol.myAtoi("0-1")
 print(f"Output of test2: {test4}\n")
-test5 = Solution().myAtoi("words and 987")
+test5 = sol.myAtoi("words and 987")
 print(f"Output of test3: {test5}\n")

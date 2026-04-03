@@ -38,13 +38,11 @@ class Solution:
                     result.append(left)
         return result
            
+sol = Solution()      
         
-    
-        
-        
-test1 = Solution().findSubstring("barfoothefoobarman",["foo","bar"])
+test1 = sol.findSubstring("barfoothefoobarman",["foo","bar"])
 print(f"Output of test1: {test1}\n")
-test2 = Solution().findSubstring("wordgoodgoodgoodbestword",["word","good","best","word"])
+test2 = sol.findSubstring("wordgoodgoodgoodbestword",["word","good","best","word"])
 print(f"Output of test2: {test2}\n")
-test3 = Solution().findSubstring("barfoofoobarthefoobarman",["bar","foo","the"])
+test3 = sol.findSubstring("barfoofoobarthefoobarman",["bar","foo","the"])
 print(f"Output of test3: {test3}\n")

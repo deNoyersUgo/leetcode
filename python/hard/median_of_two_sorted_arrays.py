@@ -42,8 +42,10 @@ class Solution:
 
         # A mathematically guaranteed return path is necessary for strictly typed systems.
         raise ValueError("Input arrays are not properly sorted.")
-        
-test1 = Solution().findMedianSortedArrays([1,3], [2])
+    
+sol = Solution()    
+    
+test1 = sol.findMedianSortedArrays([1,3], [2])
 print(f"Output of test1: {test1}\n")
-test2 = Solution().findMedianSortedArrays([1,2], [3,4])
+test2 = sol.findMedianSortedArrays([1,2], [3,4])
 print(f"Output of test2: {test2}\n")

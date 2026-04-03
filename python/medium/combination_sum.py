@@ -23,10 +23,11 @@ class Solution:
         self.findCombination(0, target, candidates, res, ds) # start recursive search
         return res
 
+sol = Solution()     
         
-test1 = Solution().combinationSum([2,3,6,7], 7)
+test1 = sol.combinationSum([2,3,6,7], 7)
 print(f"Output of test1: {test1}\n")
-test2 = Solution().combinationSum([2,3,5], 8)
+test2 = sol.combinationSum([2,3,5], 8)
 print(f"Output of test2: {test2}\n")
-test3 = Solution().combinationSum([2], 1)
+test3 = sol.combinationSum([2], 1)
 print(f"Output of test3: {test3}\n")

@@ -35,9 +35,9 @@ class Solution:
         # Convert result array to string and return
         return "".join(str(digit) for digit in result[start_index:])
             
-
+sol = Solution()
         
-test1 = Solution().multiply("2", "3")
+test1 = sol.multiply("2", "3")
 print(f"Output of test1: {test1}\n")
-test2 = Solution().multiply("123", "456")
+test2 = sol.multiply("123", "456")
 print(f"Output of test2: {test2}\n")

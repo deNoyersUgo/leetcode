@@ -1,3 +1,5 @@
+from typing import Optional
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, val=0, next=None):
@@ -50,8 +52,9 @@ def print_linked_list(head):
         head = head.next
     return items
     
-    
-test1 = Solution().reverseKGroup(list_to_linkedlist([1,2,3,4,5]),2)
+sol = Solution()
+
+test1 = sol.reverseKGroup(list_to_linkedlist([1,2,3,4,5]),2)
 print(f"Output of test1: {print_linked_list(test1)}\n")
-test2 = Solution().reverseKGroup(list_to_linkedlist([1,2,3,4,5]), 3)
+test2 = sol.reverseKGroup(list_to_linkedlist([1,2,3,4,5]), 3)
 print(f"Output of test2: {print_linked_list(test2)}\n")

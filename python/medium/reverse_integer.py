@@ -10,10 +10,12 @@ class Solution:
            return -1 * output
         else:
            return output
+
+sol = Solution()
         
-test1 = Solution().reverse(123)
+test1 = sol.reverse(123)
 print(f"Output of test1: {test1}\n")
-test2 = Solution().reverse(-123)
+test2 = sol.reverse(-123)
 print(f"Output of test2: {test2}\n")
-test3 = Solution().reverse(120)
+test3 = sol.reverse(120)
 print(f"Output of test3: {test3}\n")

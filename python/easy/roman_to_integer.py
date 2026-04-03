@@ -34,17 +34,11 @@ class Solution:
                 
         return total
 
+sol = Solution()
 
-
-
-
-
-
-
-
-test1 = Solution().romanToInt("III")
+test1 = sol.romanToInt("III")
 print(f"Output of test1: {test1}\n")
-test2 = Solution().romanToInt("LVIII")
+test2 = sol.romanToInt("LVIII")
 print(f"Output of test1: {test2}\n")
-test3 = Solution().romanToInt("MCMXCIV")
+test3 = sol.romanToInt("MCMXCIV")
 print(f"Output of test1: {test3}\n")

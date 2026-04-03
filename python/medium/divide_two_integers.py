@@ -18,8 +18,9 @@ class Solution:
 
         return sign * ans
         
+sol = Solution()
         
-test1 = Solution().divide(10,3)
+test1 = sol.divide(10,3)
 print(f"Output of test1: {test1}\n")
-test2 = Solution().divide(-7,-1)
+test2 = sol.divide(-7,-1)
 print(f"Output of test2: {test2}\n")

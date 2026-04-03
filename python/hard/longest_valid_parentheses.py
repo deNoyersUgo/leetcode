@@ -17,11 +17,11 @@ class Solution:
                     arr.append(i)
         return result
             
+sol = Solution()        
         
-        
-test1 = Solution().longestValidParentheses("(()")
+test1 = sol.longestValidParentheses("(()")
 print(f"Output of test1: {test1}\n")
-test2 = Solution().longestValidParentheses(")()())")
+test2 = sol.longestValidParentheses(")()())")
 print(f"Output of test2: {test2}\n")
-test3 = Solution().longestValidParentheses("")
+test3 = sol.longestValidParentheses("")
 print(f"Output of test3: {test3}\n")

@@ -27,11 +27,11 @@ class Solution:
         
         return j == n
             
-
+sol = Solution()
         
-test1 = Solution().isMatch("aa", "a")
+test1 = sol.isMatch("aa", "a")
 print(f"Output of test1: {test1}\n")
-test2 = Solution().isMatch("aa", "*")
+test2 = sol.isMatch("aa", "*")
 print(f"Output of test2: {test2}\n")
-test3 = Solution().isMatch("cb", "?a")
+test3 = sol.isMatch("cb", "?a")
 print(f"Output of test3: {test3}\n")

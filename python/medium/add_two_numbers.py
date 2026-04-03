@@ -34,7 +34,6 @@ class Solution:
         return dummy_head.next
         
 # --- Helper Functions for Local Testing ---
-"""
 def build_linked_list(arr: list) -> ListNode:
     # We iterate through the array backwards to build the list from tail to head.
     # This guarantees O(N) time complexity without needing to track a tail pointer.
@@ -53,11 +52,11 @@ def print_linked_list(node: ListNode) -> list:
         node = node.next
     return result
         
-        
-test1 = Solution().addTwoNumbers(build_linked_list([2,4,3]), build_linked_list([5,6,4]))
+sol = Solution()
+
+test1 = sol.addTwoNumbers(build_linked_list([2,4,3]), build_linked_list([5,6,4]))
 print(f"Output of test1: {print_linked_list(test1)}\n")
-test2 = Solution().addTwoNumbers(build_linked_list([0]), build_linked_list([0]))
+test2 = sol.addTwoNumbers(build_linked_list([0]), build_linked_list([0]))
 print(f"Output of test2: {print_linked_list(test2)}\n")
-test3 = Solution().addTwoNumbers(build_linked_list([9,9,9,9,9,9,9]), build_linked_list([9,9,9,9]))
+test3 = sol.addTwoNumbers(build_linked_list([9,9,9,9,9,9,9]), build_linked_list([9,9,9,9]))
 print(f"Output of test3: {print_linked_list(test3)}\n")
-"""

@@ -1,3 +1,5 @@
+from typing import List
+
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
         longest_pre = ""
@@ -10,8 +12,10 @@ class Solution:
             else:
                 break
         return longest_pre
-      
-test1 = Solution().longestCommonPrefix(["flower","flow","flight"])
+
+sol = Solution()
+
+test1 = sol.longestCommonPrefix(["flower","flow","flight"])
 print(f"Output of test1: {test1}\n")
-test2 = Solution().longestCommonPrefix(["dog","racecar","car"])
+test2 = sol.longestCommonPrefix(["dog","racecar","car"])
 print(f"Output of test1: {test2}\n")

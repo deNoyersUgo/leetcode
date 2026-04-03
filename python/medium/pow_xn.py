@@ -46,10 +46,11 @@ class Solution:
         else:
             return 1.0 / quick_power(x, -n)
             
-    
-test1 = Solution().myPow(2.00000, 10)
+sol = Solution()
+
+test1 = sol.myPow(2.00000, 10)
 print(f"Output of test1: {test1}\n")
-test2 = Solution().myPow(2.10000,3)
+test2 = sol.myPow(2.10000,3)
 print(f"Output of test2: {test2}\n")
-test3 = Solution().myPow(2.00000,-2)
+test3 = sol.myPow(2.00000,-2)
 print(f"Output of test3: {test3}\n")

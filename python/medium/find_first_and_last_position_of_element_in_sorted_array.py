@@ -32,10 +32,11 @@ class Solution:
         
         return [first, last]
         
+sol = Solution()  
         
-test1 = Solution().searchRange([5,7,7,8,8,10],8)
+test1 = sol.searchRange([5,7,7,8,8,10],8)
 print(f"Output of test1: {test1}\n")
-test2 = Solution().searchRange([5,7,7,8,8,10],6)
+test2 = sol.searchRange([5,7,7,8,8,10],6)
 print(f"Output of test2: {test2}\n")
-test3 = Solution().searchRange([],0)
+test3 = sol.searchRange([],0)
 print(f"Output of test3: {test3}\n")

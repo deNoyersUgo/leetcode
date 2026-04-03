@@ -17,11 +17,10 @@ class Solution:
                 
             right -= 1
             left += 1
+                    
+sol = Solution()
         
-                
-
-        
-test1 = Solution().rotate([[1,2,3],[4,5,6],[7,8,9]])
+test1 = sol.rotate([[1,2,3],[4,5,6],[7,8,9]])
 print(f"Output of test1: {test1}\n")
-test2 = Solution().rotate([[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]])
+test2 = sol.rotate([[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]])
 print(f"Output of test2: {test2}\n")

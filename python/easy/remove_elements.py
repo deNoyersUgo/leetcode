@@ -1,3 +1,5 @@
+from typing import List
+
 class Solution:
     def removeElement(self, nums: List[int], val: int) -> int:
         k = 0
@@ -7,7 +9,9 @@ class Solution:
                 k += 1
         return k
     
-test1 = Solution().removeElement([3,2,2,3], 3)
+sol = Solution()
+
+test1 = sol.removeElement([3,2,2,3], 3)
 print(f"Output of test1: {test1}\n")
-test2 = Solution().removeElement([0,1,2,2,3,0,4,2], 2)
+test2 = sol.removeElement([0,1,2,2,3,0,4,2], 2)
 print(f"Output of test2: {test2}\n")

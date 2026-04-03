@@ -1,3 +1,5 @@
+from typing import List 
+
 class Solution:
     def fourSum(self, nums: List[int], target: int) -> List[List[int]]:
         nums.sort()
@@ -18,9 +20,10 @@ class Solution:
                     else:
                         right -= 1
         return list(quadruplets)
-        
 
-test1 = Solution().fourSum([1,0,-1,0,-2,2], 0)
+sol = Solution()        
+
+test1 = sol.fourSum([1,0,-1,0,-2,2], 0)
 print(f"Output of test1: {test1}\n")
-test2 = Solution().fourSum([2,2,2,2,2], 8)
+test2 = sol.fourSum([2,2,2,2,2], 8)
 print(f"Output of test2: {test2}\n")

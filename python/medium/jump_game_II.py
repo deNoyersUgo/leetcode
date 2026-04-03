@@ -20,10 +20,9 @@ class Solution:
         
         return steps
         
-            
-
-        
-test1 = Solution().jump([2,3,1,1,4])
+sol = Solution()            
+                    
+test1 = sol.jump([2,3,1,1,4])
 print(f"Output of test1: {test1}\n")
-test2 = Solution().jump([2,3,0,1,4])
+test2 = sol.jump([2,3,0,1,4])
 print(f"Output of test2: {test2}\n")

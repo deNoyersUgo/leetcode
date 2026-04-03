@@ -30,11 +30,11 @@ class Solution:
                         right -= 1           
         return out
                     
-        
+sol = Solution()        
 
-test1 = Solution().threeSum([-1,0,1,2,-1,-4])
+test1 = sol.threeSum([-1,0,1,2,-1,-4])
 print(f"Output of test1: {test1}\n")
-test2 = Solution().threeSum([0,1,1])
+test2 = sol.threeSum([0,1,1])
 print(f"Output of test2: {test2}\n")
-test3 = Solution().threeSum([0,0,0])
+test3 = sol.threeSum([0,0,0])
 print(f"Output of test3: {test3}\n")

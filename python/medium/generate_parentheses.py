@@ -32,8 +32,10 @@ class Solution:
 
         backtrack(0, 0)
         return ans
+
+sol = Solution()
         
-test1 = Solution().generateParenthesis(3)
+test1 = sol.generateParenthesis(3)
 print(f"Output of test1: {test1}\n")
-test2 = Solution().generateParenthesis(1)
+test2 = sol.generateParenthesis(1)
 print(f"Output of test2: {test2}\n")

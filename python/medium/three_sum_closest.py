@@ -1,3 +1,4 @@
+from typing import List
 class Solution:
     def threeSumClosest(self, nums: List[int], target: int) -> int:
         nums.sort()
@@ -22,7 +23,9 @@ class Solution:
                     
         return res
         
-test1 = Solution().threeSumClosest([-1,2,1,-4], 1)
+sol = Solution()
+
+test1 = sol.threeSumClosest([-1,2,1,-4], 1)
 print(f"Output of test1: {test1}\n")
-test2 = Solution().threeSumClosest([0,0,0], 1)
+test2 = sol.threeSumClosest([0,0,0], 1)
 print(f"Output of test2: {test2}\n")

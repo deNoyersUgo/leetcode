@@ -20,12 +20,14 @@ class Solution:
                 elif matches(i,j):
                     dp[i+1][j+1] = dp[i][j]
         return dp[strLen][patternLen]
-        
-test1 = Solution().isMatch("aa", "a")
+
+sol = Solution()
+
+test1 = sol.isMatch("aa", "a")
 print(f"Output of test1: {test1}\n")
-test2 = Solution().isMatch("aa", "a*")
+test2 = sol.isMatch("aa", "a*")
 print(f"Output of test2: {test2}\n")
-test3 = Solution().isMatch("ab", ".*")
+test3 = sol.isMatch("ab", ".*")
 print(f"Output of test3: {test3}\n")
 
 class SolutionBis:

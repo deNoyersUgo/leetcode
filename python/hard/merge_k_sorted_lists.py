@@ -52,15 +52,17 @@ def print_linked_list(head):
     # WHY: Returning the items array prevents the f-string from evaluating a print() function's inherently None return type.
     return items
 
+sol = Solution()
+
 # Test cases
 # WHY: We use a list comprehension to map the helper function over each individual sub-array, generating the required List[ListNode].
 test1_input = [list_to_linkedlist(l) for l in [[1,4,5],[1,3,4],[2,6]]]
-test1 = Solution().mergeKLists(test1_input)
+test1 = sol.mergeKLists(test1_input)
 print(f"Output of test1: {print_linked_list(test1)}\n")
 
-test2 = Solution().mergeKLists([])
+test2 = sol.mergeKLists([])
 print(f"Output of test2: {print_linked_list(test2)}\n")
 
 test3_input = [list_to_linkedlist(l) for l in [[]]]
-test3 = Solution().mergeKLists(test3_input)
+test3 = sol.mergeKLists(test3_input)
 print(f"Output of test3: {print_linked_list(test3)}\n")

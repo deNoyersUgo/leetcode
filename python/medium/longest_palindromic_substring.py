@@ -34,15 +34,9 @@ class Solution:
         # The -1 corrects for the final while-loop iteration that breaks the symmetry.
         return right - left - 1
     
+sol = Solution()            
             
-        
-        
-        
-
-        
-        
-        
-test1 = Solution().longestPalindrome("babad")
+test1 = sol.longestPalindrome("babad")
 print(f"Output of test1: {test1}\n")
-test2 = Solution().longestPalindrome("cbbd")
+test2 = sol.longestPalindrome("cbbd")
 print(f"Output of test2: {test2}\n")

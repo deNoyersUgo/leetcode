@@ -50,10 +50,11 @@ def print_linked_list(head):
         head = head.next
     return items
 
-# Test cases
-test1 = Solution().mergeTwoLists(list_to_linkedlist([1,2,4]), list_to_linkedlist([1,3,4]))
+sol = Solution()
+
+test1 = sol.mergeTwoLists(list_to_linkedlist([1,2,4]), list_to_linkedlist([1,3,4]))
 print(f"Output of test1: {print_linked_list(test1)}\n")
-test2 = Solution().mergeTwoLists(list_to_linkedlist([]), list_to_linkedlist([]))
+test2 = sol.mergeTwoLists(list_to_linkedlist([]), list_to_linkedlist([]))
 print(f"Output of test2: {print_linked_list(test2)}\n")
-test3 = Solution().mergeTwoLists(list_to_linkedlist([]), list_to_linkedlist([0]))
+test3 = sol.mergeTwoLists(list_to_linkedlist([]), list_to_linkedlist([0]))
 print(f"Output of test3: {print_linked_list(test3)}\n")

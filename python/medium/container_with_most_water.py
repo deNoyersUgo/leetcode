@@ -1,3 +1,5 @@
+from typing import List 
+
 class Solution:
   def maxArea(self, height: List[int]) -> int:
     left, right = 0, len(height) - 1
@@ -13,8 +15,10 @@ class Solution:
         right -= 1
     
     return maxA
-    
-test1 = Solution().maxArea([1,8,6,2,5,4,8,3,7])
+   
+sol = Solution()
+ 
+test1 = sol.maxArea([1,8,6,2,5,4,8,3,7])
 print(f"Output of test1: {test1}\n")
-test2 = Solution().maxArea([1,1])
+test2 = sol.maxArea([1,1])
 print(f"Output of test2: {test2}\n")

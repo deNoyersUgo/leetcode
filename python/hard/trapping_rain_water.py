@@ -18,9 +18,9 @@ class Solution:
         
         return res
             
-
+sol = Solution()
         
-test1 = Solution().trap([0,1,0,2,1,0,1,3,2,1,2,1])
+test1 = sol.trap([0,1,0,2,1,0,1,3,2,1,2,1])
 print(f"Output of test1: {test1}\n")
-test2 = Solution().trap([4,2,0,3,2,5])
+test2 = sol.trap([4,2,0,3,2,5])
 print(f"Output of test2: {test2}\n")

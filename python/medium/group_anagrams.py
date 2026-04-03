@@ -11,13 +11,11 @@ class Solution:
         
         return list(anagrams_groups.values())
             
+sol = Solution()
 
-                
-
-        
-test1 = Solution().groupAnagrams(["eat","tea","tan","ate","nat","bat"])
+test1 = sol.groupAnagrams(["eat","tea","tan","ate","nat","bat"])
 print(f"Output of test1: {test1}\n")
-test2 = Solution().groupAnagrams([""])
+test2 = sol.groupAnagrams([""])
 print(f"Output of test2: {test2}\n")
-test3 = Solution().groupAnagrams(["a"])
+test3 = sol.groupAnagrams(["a"])
 print(f"Output of test3: {test3}\n")

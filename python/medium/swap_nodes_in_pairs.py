@@ -37,12 +37,13 @@ def print_linked_list(head):
         head = head.next
     return items
     
+sol = Solution()
     
-test1 = Solution().swapPairs(list_to_linkedlist([1,2,3,4]))
+test1 = sol.swapPairs(list_to_linkedlist([1,2,3,4]))
 print(f"Output of test1: {print_linked_list(test1)}\n")
-test2 = Solution().swapPairs(list_to_linkedlist([]))
+test2 = sol.swapPairs(list_to_linkedlist([]))
 print(f"Output of test2: {print_linked_list(test2)}\n")
-test3 = Solution().swapPairs(list_to_linkedlist([1]))
+test3 = sol.swapPairs(list_to_linkedlist([1]))
 print(f"Output of test3: {print_linked_list(test3)}\n")
-test4 = Solution().swapPairs(list_to_linkedlist([1,2,3]))
+test4 = sol.swapPairs(list_to_linkedlist([1,2,3]))
 print(f"Output of test4: {print_linked_list(test4)}\n")

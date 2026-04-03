@@ -23,9 +23,11 @@ class Solution:
             
         return []
 
-test1 = Solution().twoSum([2,7,11,15], 9)
+sol = Solution()
+
+test1 = sol.twoSum([2,7,11,15], 9)
 print(f"Output of test1: {test1}")
-test2 = Solution().twoSum([3, 2, 4], 6)
+test2 = sol.twoSum([3, 2, 4], 6)
 print(f"Output of test2: {test2}")
-test3 = Solution().twoSum([3, 3], 6)
+test3 = sol.twoSum([3, 3], 6)
 print(f"Output of test3: {test3}")

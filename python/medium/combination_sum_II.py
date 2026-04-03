@@ -21,9 +21,9 @@ class Solution:
         dfs(0, target, [])
         return res
             
-
+sol = Solution()
         
-test1 = Solution().combinationSum2([10,1,2,7,6,1,5], 8)
+test1 = sol.combinationSum2([10,1,2,7,6,1,5], 8)
 print(f"Output of test1: {test1}\n")
-test2 = Solution().combinationSum2([2,5,2,1,2], 5)
+test2 = sol.combinationSum2([2,5,2,1,2], 5)
 print(f"Output of test2: {test2}\n")

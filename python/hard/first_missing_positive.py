@@ -22,11 +22,11 @@ class Solution:
         return n+1
         
             
-
+sol = Solution()
         
-test1 = Solution().firstMissingPositive([1,2,0])
+test1 = sol.firstMissingPositive([1,2,0])
 print(f"Output of test1: {test1}\n")
-test2 = Solution().firstMissingPositive([3,4,-1,1])
+test2 = sol.firstMissingPositive([3,4,-1,1])
 print(f"Output of test2: {test2}\n")
-test3 = Solution().firstMissingPositive([7,8,9,11,12])
+test3 = sol.firstMissingPositive([7,8,9,11,12])
 print(f"Output of test3: {test3}\n")

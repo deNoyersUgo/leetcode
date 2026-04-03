@@ -34,8 +34,9 @@ class Solution:
         return result
                 
 
+sol = Solution()
         
-test1 = Solution().permuteUnique([1,1,2])
+test1 = sol.permuteUnique([1,1,2])
 print(f"Output of test1: {test1}\n")
-test2 = Solution().permuteUnique([1,2,3])
+test2 = sol.permuteUnique([1,2,3])
 print(f"Output of test2: {test2}\n")

@@ -23,12 +23,11 @@ class Solution:
             
         return max_len
             
-     
-        
+sol = Solution()       
 
-test1 = Solution().lengthOfLongestSubstring("abcabcbb")
+test1 = sol.lengthOfLongestSubstring("abcabcbb")
 print(f"Output of test1: {test1}\n")
-test2 = Solution().lengthOfLongestSubstring("bbbbb")
+test2 = sol.lengthOfLongestSubstring("bbbbb")
 print(f"Output of test2: {test2}\n")
-test3 = Solution().lengthOfLongestSubstring("pwwkew")
+test3 = sol.lengthOfLongestSubstring("pwwkew")
 print(f"Output of test3: {test3}")

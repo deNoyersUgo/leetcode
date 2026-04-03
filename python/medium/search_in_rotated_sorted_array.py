@@ -26,12 +26,11 @@ class Solution:
                     right = mid - 1
         return -1
         
-            
-        
-        
-test1 = Solution().search([4,5,6,7,0,1,2],0)
+sol = Solution()
+
+test1 = sol.search([4,5,6,7,0,1,2],0)
 print(f"Output of test1: {test1}\n")
-test2 = Solution().search([4,5,6,7,0,1,2],3)
+test2 = sol.search([4,5,6,7,0,1,2],3)
 print(f"Output of test2: {test2}\n")
-test3 = Solution().search([1],0)
+test3 = sol.search([1],0)
 print(f"Output of test3: {test3}\n")

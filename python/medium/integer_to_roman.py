@@ -13,10 +13,11 @@ class Solution:
         # String concatenation here is performed exactly once per decimal place.
         return (thousands[num // 1000] + hundreds[(num % 1000) // 100] + tens[(num % 100) // 10] + ones[num % 10])
         
+sol = Solution()
         
-test1 = Solution().intToRoman(3749)
+test1 = sol.intToRoman(3749)
 print(f"Output of test1: {test1}\n")
-test2 = Solution().intToRoman(58)
+test2 = sol.intToRoman(58)
 print(f"Output of test2: {test2}\n")
-test3 = Solution().intToRoman(1994)
+test3 = sol.intToRoman(1994)
 print(f"Output of test2: {test3}\n")

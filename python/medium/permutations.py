@@ -23,10 +23,11 @@ class Solution:
         dfs([])
         return res
 
-        
-test1 = Solution().permute([1,2,3])
+sol = Solution()
+
+test1 = sol.permute([1,2,3])
 print(f"Output of test1: {test1}\n")
-test2 = Solution().permute([0,1])
+test2 = sol.permute([0,1])
 print(f"Output of test2: {test2}\n")
-test3 = Solution().permute([1])
+test3 = sol.permute([1])
 print(f"Output of test3: {test3}\n")
