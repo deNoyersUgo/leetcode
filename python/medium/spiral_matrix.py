@@ -7,7 +7,7 @@ class Solution:
         
         # direction vectors: right(0,1), down(1,0), left(0,-1), up(-1,0)
         # stored as (dx1, dy1, dx2, dy2, dx3, dy3, dx4, dy4) in compressed form
-        directions = (0, 1, 0, -1, 0)
+        directions = [0, 1, 0, -1, 0]
         
         # track visited cells to know when to turn 
         visited = [[False] * num_cols for _ in range(num_rows)]
